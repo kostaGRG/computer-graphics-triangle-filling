@@ -1,6 +1,6 @@
 # Computer Graphics: Triangle Filling
 ## Intro
-This project is created for the university class named Computer Graphics at Aristotle University of Thessaloniki (AUTh).
+This project is created for the university class named Computer Graphics at Aristotle University of Thessaloniki (AUTh). It's the first out of three repositories referenced on the same class.
 
 ## General
 ### Files
