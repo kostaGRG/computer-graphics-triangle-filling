@@ -79,3 +79,17 @@ Consider that:
 1. The background of the canvas is white (rgb = (1,1,1)).
 2. The canvas has dimensions M = 512, N = 512.
 
+## Assumptions
+* The algorithm stores points with inverted coordinates only so that they are properly projected by the function we use.
+* In the image projection, the larger y values are located at the bottom of the axis, so the code of the shade_triangle function is sufficient for the correct handling of horizontal lines.
+• In general, an attempt was made to follow the pseudocode of the third chapter of the posted notes on the class, however, some simplifications were made to the algorithm due to the use of exclusively triangles and not general polygons. One such example is the non-counting of even/odd intersections.
+* Additionally, since active points may have decimal values, rounding to the nearest pixel is performed (in the code: int(x+0.5)).
+
+## Results
+1. Flat colouring
+   
+![Image with flat colouring](/images/result_flat.png)
+
+2. Gouraud colouring
+
+![Image with Gouraud colouring](/images/result_gouraud.png)
